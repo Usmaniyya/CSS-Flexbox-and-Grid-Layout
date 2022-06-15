@@ -1,0 +1,100 @@
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+         :root {
+            --font-size: 15px;
+            --bright-orange: hsl(31, 77%, 52%);
+            --dark-cyan: hsl(184, 100%, 22%);
+            --very-dark-cyan: hsl(179, 100%, 13%);
+            --font-family-1: 'Big Shoulders Display', cursive;
+            --font-family-2: 'Lexend Deca', sans-serif;
+            --paragraphs: hsla(0, 0%, 100%, 0.75);
+            --very-light-gray: hsl(0, 0%, 95%);
+        }
+        
+        body {
+            font-family: var(--font-family-2);
+            font-size: var(--font-size);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--very-light-gray);
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .container {
+            max-width: 700px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        .card {
+            padding: 4rem 2rem;
+            grid-template-columns: 1fr;
+        }
+        
+        .card img {
+            margin-left: .3rem;
+            width: 50px;
+            margin-bottom: 1rem;
+        }
+        
+        .card h2 {
+            font-size: 1.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: var(--font-family-1);
+            color: var(--very-light-gray);
+            margin-bottom: 2rem;
+        }
+        
+        .card p {
+            color: var(--paragraphs);
+            line-height: 1.8;
+            margin-bottom: 5rem;
+        }
+        
+        .card a {
+            padding: .85rem 1rem;
+            border-radius: 100px;
+            background-color: var(--very-light-gray);
+            margin-left: 2rem;
+        }
+        
+        .card-1 {
+            background-color: var(--bright-orange);
+            border-bottom-left-radius: 7px;
+            border-top-left-radius: 7px;
+        }
+        
+        .card-2 {
+            background-color: var(--dark-cyan);
+        }
+        
+        .card-3 {
+            background-color: var(--very-dark-cyan);
+            border-top-right-radius: 7px;
+            border-bottom-right-radius: 7px;
+        }
+        
+        .card-1 a {
+            color: var(--bright-orange);
+        }
+        
+        .card-2 a {
+            color: var(--dark-cyan);
+        }
+        
+        .card-3 a {
+            color: var(--very-dark-cyan);
+        }
+        
+        .card-1 a:hover,
+        .card-2 a:hover,
+        .card-3 a:hover {
+            color: var(--very-light-gray);
+            background-color: transparent;
+            border: 1px solid var(--very-light-gray);
+        }
